@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grasse Perfume Oils — Wholesale Catalogue</title>
+<link href="fonts.css" rel="stylesheet">
+<style>
+:root{--bg:#f5f0e8;--panel:#efe7da;--card:#fffdf9;--line:#e3d8c6;--gold:#a8844b;--gold2:#7a5c2e;--txt:#3a3029;--mut:#7f7466;--green:#2bb565}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Tajawal',sans-serif;line-height:1.6;overflow-x:hidden}
+body.fa{font-family:'Vazirmatn',sans-serif}
+body.en{font-family:'Inter',sans-serif}
+.latin{font-family:'Inter',sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:auto;padding:0 20px}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:50;background:rgba(245,240,232,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{font-family:'Cormorant Garamond',serif;font-size:22px;letter-spacing:3px;color:var(--gold2);white-space:nowrap}
+.logo small{display:block;font-family:'Inter';font-size:9px;letter-spacing:4px;color:var(--mut);margin-top:-6px}
+.langs{display:flex;border:1px solid var(--line);border-radius:30px;overflow:hidden}
+.langs button{background:none;border:0;color:var(--mut);padding:7px 14px;cursor:pointer;font:600 13px 'Inter','Tajawal','Vazirmatn'}
+.langs button.on{background:var(--gold);color:#fff}
+
+/* hero */
+.hero{position:relative;padding:90px 0 70px;text-align:center;overflow:hidden;
+ background:radial-gradient(ellipse at 50% 0%,rgba(200,165,105,.25),transparent 60%),radial-gradient(ellipse at 15% 90%,rgba(150,175,150,.22),transparent 55%),radial-gradient(ellipse at 85% 80%,rgba(220,180,160,.22),transparent 55%)}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--gold);color:var(--gold2);padding:6px 16px;border-radius:30px;font-size:13px;margin-bottom:22px;animation:fadeUp .8s both}
+.flag{display:inline-flex;width:20px;height:13px;border-radius:2px;overflow:hidden}
+.flag i{flex:1}.flag i:nth-child(1){background:#0055a4}.flag i:nth-child(2){background:#fff}.flag i:nth-child(3){background:#ef4135}
+.hero h1{font-size:clamp(30px,5.4vw,60px);font-weight:800;line-height:1.25;animation:fadeUp .8s .1s both}
+.shine{background:linear-gradient(100deg,#9a7740 20%,#d9b97c 40%,#9a7740 60%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 4s linear infinite}
+.hero p.sub{max-width:760px;margin:20px auto 0;color:var(--mut);font-size:clamp(15px,2vw,19px);animation:fadeUp .8s .2s both}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px;animation:fadeUp .8s .3s both}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:40px;font-weight:700;font-size:16px;transition:.25s}
+.btn.wa{background:var(--green);color:#fff;box-shadow:0 8px 24px rgba(43,181,101,.25)}
+.btn.wa:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(37,211,102,.5)}
+.btn.gh{border:1px solid var(--gold);color:var(--gold2)}
+.btn.gh:hover{background:rgba(168,132,75,.1)}
+.btn svg{width:20px;height:20px}
+
+/* bottles art */
+.art{display:flex;justify-content:center;align-items:flex-end;gap:26px;margin:50px auto 0;height:170px}
+.bottle{position:relative;width:62px;animation:float 5s ease-in-out infinite}
+.bottle:nth-child(2){width:84px;animation-delay:-1.5s}.bottle:nth-child(3){animation-delay:-3s}
+.bottle .cap{width:40%;height:26px;margin:auto;background:linear-gradient(90deg,#9c7a3c,#f3dca4,#9c7a3c);border-radius:4px 4px 2px 2px}
+.bottle .neck{width:24%;height:10px;margin:auto;background:#c9a45a}
+.bottle .body{height:105px;border-radius:14px;border:1px solid rgba(243,220,164,.5);background:linear-gradient(160deg,rgba(255,255,255,.7),rgba(222,196,140,.45) 40%,rgba(168,120,60,.6));position:relative;overflow:hidden;box-shadow:0 20px 40px rgba(122,92,46,.15)}
+.bottle:nth-child(2) .body{height:135px}
+.bottle .body:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.35) 45%,transparent 60%);animation:sweep 3.5s infinite}
+.drop{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--gold2);opacity:.6;animation:rise 7s linear infinite}
+
+/* features */
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:-10px;padding-bottom:20px}
+.feat{background:var(--card);box-shadow:0 4px 18px rgba(122,92,46,.06);border:1px solid var(--line);border-radius:18px;padding:22px;transition:.3s}
+.feat:hover{border-color:var(--gold);transform:translateY(-4px)}
+.feat .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(168,132,75,.12);color:var(--gold);margin-bottom:12px}
+.feat .ic svg{width:24px;height:24px}
+.feat h3{font-size:17px;color:var(--gold2);margin-bottom:4px}
+.feat p{color:var(--mut);font-size:14px}
+
+/* alcohol */
+.alc{margin:40px 0;border-radius:24px;padding:30px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;
+ background:linear-gradient(120deg,rgba(0,85,164,.08),#fffdf9 50%,rgba(239,65,53,.08));border:1px solid var(--line)}
+.alc .tag{color:var(--gold);font-size:13px;letter-spacing:1px}
+.alc h2{font-size:clamp(22px,3vw,30px);margin:4px 0}
+.alc p{color:var(--mut)}
+.price-big{text-align:center;background:var(--card);border:1px solid var(--gold);border-radius:18px;padding:16px 26px}
+.price-big b{display:block;font:700 38px 'Inter';color:var(--gold2)}
+.price-big span{color:var(--mut);font-size:13px}
+
+/* catalogue */
+.cat h2.title{text-align:center;font-size:clamp(26px,4vw,40px);margin:30px 0 6px}
+.cat p.note{text-align:center;color:var(--mut);margin-bottom:24px;font-size:14px}
+.tools{position:sticky;top:62px;z-index:40;background:var(--bg);padding:12px 0;border-bottom:1px solid var(--line)}
+.search{position:relative}
+.search input{width:100%;background:var(--card);border:1px solid var(--line);color:var(--txt);border-radius:14px;padding:15px 50px;font:inherit;font-size:16px;outline:none;transition:.2s}
+.search input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(168,132,75,.15)}
+.search svg{position:absolute;top:50%;transform:translateY(-50%);inset-inline-start:16px;width:20px;color:var(--gold)}
+.tabs{display:flex;gap:8px;margin-top:10px;overflow-x:auto;scrollbar-width:none}
+.tabs button{flex:none;background:var(--card);border:1px solid var(--line);color:var(--mut);padding:9px 16px;border-radius:30px;cursor:pointer;font:inherit;font-size:14px;font-weight:600}
+.tabs button.on{background:var(--gold);color:#fff;border-color:var(--gold)}
+.tabs .n{opacity:.7;font-size:12px;margin-inline-start:4px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--mut);font-size:12px;margin-top:10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-inline-end:5px;vertical-align:middle}
+
+.sec-h{display:flex;align-items:center;gap:12px;margin:34px 0 14px}
+.sec-h h3{font-size:22px;color:var(--gold2);white-space:nowrap}
+.sec-h p{color:var(--mut);font-size:13px}
+.sec-h:after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+[dir=rtl] .sec-h:after{background:linear-gradient(270deg,var(--line),transparent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;transition:.2s;animation:fadeUp .4s both}
+.item{box-shadow:0 2px 10px rgba(122,92,46,.05)}.item:hover{border-color:var(--gold);background:#fffaf2}
+.item .nm{font:700 15px 'Inter';letter-spacing:.3px;direction:ltr;text-align:start}
+[dir=rtl] .item .nm,[dir=rtl] .item .br{text-align:right}
+.item .br{font:600 11px 'Inter';color:var(--gold);letter-spacing:1.5px;margin-bottom:2px;direction:ltr}
+.tiers{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.tier{flex:1;min-width:70px;border-radius:10px;padding:6px 8px;text-align:center;border:1px solid var(--line)}
+.tier small{display:block;font-size:10.5px;color:var(--mut);line-height:1.3}
+.tier b{font:700 15px 'Inter'}
+.tier .kg{font-size:10px;margin-top:-2px}
+.tier b em{font-style:normal;font-size:10px;color:var(--mut);margin-inline-start:2px}
+.t0{background:#f6ecd8;border-color:#d9c08f}
+.t1{background:#eef1f3;border-color:#d8dee3}
+.t2{background:#f5ebe3;border-color:#e3d1c2}
+.empty{text-align:center;padding:50px 20px;color:var(--mut);display:none}
+.empty .btn{margin-top:16px}
+
+.cta{margin:60px 0 30px;text-align:center;padding:44px 24px;border-radius:26px;border:1px solid var(--gold);
+ background:radial-gradient(ellipse at top,rgba(200,165,105,.2),transparent 70%),var(--card)}
+.cta h2{font-size:clamp(22px,3.5vw,34px)}
+.cta p{color:var(--mut);max-width:640px;margin:10px auto 22px}
+footer{text-align:center;color:var(--mut);font-size:13px;padding:30px 0 100px;border-top:1px solid var(--line)}
+.fab{position:fixed;bottom:22px;inset-inline-end:22px;z-index:60;width:62px;height:62px;border-radius:50%;background:var(--green);display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.5);animation:pulse 2.4s infinite}
+.fab svg{width:32px;height:32px;color:#fff}
+.tier b{color:var(--txt)}.t0 b{color:var(--gold2)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes shine{to{background-position:200% center}}
+@keyframes float{50%{transform:translateY(-12px)}}
+@keyframes sweep{0%{transform:translateX(-120%)}60%,100%{transform:translateX(120%)}}
+@keyframes rise{0%{transform:translateY(0);opacity:0}10%{opacity:.7}100%{transform:translateY(-420px);opacity:0}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:640px){.alc{grid-template-columns:1fr;text-align:center}.top .logo small{display:none}.hero{padding:60px 0 50px}.art{height:140px}}
+@media print{.top,.tools,.fab,.art,.drop{display:none}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <div class="logo">GRASSE OILS<small>PARFUMERIE · FRANCE</small></div>
+  <div class="langs">
+    <button data-l="ar" class="on">العربية</button><button data-l="fa">فارسی</button><button data-l="en">EN</button>
+  </div>
+</div></header>
+
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div class="badge"><span class="flag"><i></i><i></i><i></i></span><span data-t="badge"></span></div>
+    <h1><span data-t="h1a"></span><br><span class="shine" data-t="h1b"></span></h1>
+    <p class="sub" data-t="sub"></p>
+    <div class="ctas">
+      <a class="btn wa" data-wa href="#"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#waIcon"/></svg><span data-t="order"></span></a>
+      <a class="btn gh" href="#catalogue"><span data-t="browse"></span></a>
+    </div>
+    <div class="art"><div class="bottle"><div class="cap"></div><div class="neck"></div><div class="body"></div></div><div class="bottle"><div class="cap"></div><div class="neck"></div><div class="body"></div></div><div class="bottle"><div class="cap"></div><div class="neck"></div><div class="body"></div></div></div>
+  </div>
+</section>
+
+<main class="wrap">
+  <section class="feats">
+    <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div><h3 data-t="f1h"></h3><p data-t="f1p"></p></div>
+    <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l7 3v6c0 5-3 9-7 11-4-2-7-6-7-11V5z"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-t="f2h"></h3><p data-t="f2p"></p></div>
+    <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg></div><h3 data-t="f3h"></h3><p data-t="f3p"></p></div>
+    <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></div><h3 data-t="f4h"></h3><p data-t="f4p"></p></div>
+  </section>
+
+  <section class="alc reveal">
+    <div>
+      <div class="tag" data-t="alcTag"></div>
+      <h2 class="latin">CHYL ALCOHOL 96%</h2>
+      <p data-t="alcP"></p>
+    </div>
+    <div class="price-big"><b>340 <em style="font-size:16px;font-style:normal">AED</em></b><span data-t="perGallon"></span></div>
+  </section>
+
+  <section class="cat" id="catalogue">
+    <h2 class="title" data-t="catH"></h2>
+    <p class="note" data-t="catNote"></p>
+    <div class="tools">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" autocomplete="off">
+      </div>
+      <div class="tabs" id="tabs"></div>
+      <div class="legend"><span><i style="background:var(--gold)"></i><span data-t="lgA"></span></span><span><i style="background:#9aa3b0"></i><span data-t="lgB"></span></span><span><i style="background:#9c6a45"></i><span data-t="lgC"></span></span></div>
+    </div>
+    <div id="list"></div>
+    <div class="empty" id="empty">
+      <h3 data-t="emptyH"></h3><p data-t="emptyP"></p>
+      <a class="btn wa" data-wa href="#"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#waIcon"/></svg><span data-t="ask"></span></a>
+    </div>
+  </section>
+
+  <section class="cta reveal">
+    <h2 data-t="ctaH"></h2>
+    <p data-t="ctaP"></p>
+    <a class="btn wa" data-wa href="#"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#waIcon"/></svg><span class="latin" dir="ltr">+971 56 298 8927</span></a>
+  </section>
+</main>
+
+<footer><div class="wrap" data-t="foot"></div></footer>
+<a class="fab" data-wa href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#waIcon"/></svg></a>
+
+<svg width="0" height="0" style="position:absolute"><symbol id="waIcon" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.03c-.24.68-1.42 1.32-1.95 1.36-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.12-1.49-1.12-2.84s.71-2.01.96-2.29c.25-.27.55-.34.73-.34l.52.01c.17.01.39-.06.61.47.24.55.79 1.9.86 2.04.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.28-.12.56.16.27.71 1.17 1.52 1.89 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.34z"/></symbol></svg>
+
+<script>
+const DATA=[{"n":"AMBER","b":"","s":"sig","p":[1350]},{"n":"AMBER OUD","b":"","s":"sig","p":[1850]},{"n":"AMBER VANILLA","b":"","s":"sig","p":[325,225]},{"n":"AMEER AL OUD","b":"","s":"sig","p":[650,300,225]},{"n":"AOUD BAKARAT","b":"","s":"sig","p":[850]},{"n":"ASEEL","b":"","s":"sig","p":[400,225]},{"n":"ATTRACTIVE OUD","b":"","s":"sig","p":[1550]},{"n":"BAHRAINI SHAIKH","b":"","s":"sig","p":[450,225]},{"n":"BAIES ROSES","b":"","s":"sig","p":[1450]},{"n":"BAKHOOR AL YAOUD","b":"","s":"sig","p":[425,225]},{"n":"BAKHOOR BAGATELLE","b":"","s":"sig","p":[425,225]},{"n":"BAKHOOR BARNELLO SILVER","b":"","s":"sig","p":[425,225]},{"n":"BAKHOOR BIANITA SILVER","b":"","s":"sig","p":[425,225]},{"n":"BAKHOOR DRY WOOD","b":"","s":"sig","p":[425,225]},{"n":"BAKHOOR ORACLE ALYA","b":"","s":"sig","p":[450,225]},{"n":"BAKHOOR SILVER METEOR","b":"","s":"sig","p":[425,225]},{"n":"BAKHOOR SMOKE","b":"","s":"sig","p":[425,225]},{"n":"BAKHOOR TORINO","b":"","s":"sig","p":[425,225]},{"n":"BAKOOR ROYAL TURQUOISE","b":"","s":"sig","p":[425,225]},{"n":"BEAUTIFUL MOON","b":"","s":"sig","p":[400,225]},{"n":"CREAMY VANILLA","b":"","s":"sig","p":[1350]},{"n":"DARK SHADOW","b":"","s":"sig","p":[1900]},{"n":"DELICATE JASMINE","b":"","s":"sig","p":[1600]},{"n":"DESERT ROSE","b":"","s":"sig","p":[900]},{"n":"DIAMOND SHINE","b":"","s":"sig","p":[775]},{"n":"DRY SANTAL","b":"","s":"sig","p":[1500]},{"n":"ELEGANT OUD","b":"","s":"sig","p":[550]},{"n":"ETERNAL RUBY","b":"","s":"sig","p":[700]},{"n":"FRUITY MUSK","b":"","s":"sig","p":[400]},{"n":"GOLDEN FRESH","b":"","s":"sig","p":[300,225]},{"n":"GOLDEN SHEIKH","b":"","s":"sig","p":[750]},{"n":"GULF PEARL","b":"","s":"sig","p":[1000]},{"n":"IMPERIAL EMERALD","b":"","s":"sig","p":[950]},{"n":"JADE","b":"","s":"sig","p":[1950]},{"n":"MAJESTIC OUDH","b":"","s":"sig","p":[1600]},{"n":"MUKHALAT AL EMARAT","b":"","s":"sig","p":[400,225]},{"n":"MUSK SPICY","b":"","s":"sig","p":[850]},{"n":"ORIENTAL LOVE","b":"","s":"sig","p":[400]},{"n":"ORIENTAL MUSK","b":"","s":"sig","p":[800]},{"n":"OUD KHALIJI","b":"","s":"sig","p":[1850]},{"n":"PEACHY MANGO","b":"","s":"sig","p":[700,350,225]},{"n":"PRECIOUS OUD","b":"","s":"sig","p":[2850]},{"n":"ROSEY MUSK SPECIAL","b":"","s":"sig","p":[875]},{"n":"SATIN FLOWER","b":"","s":"sig","p":[400]},{"n":"SECRET OF OUD","b":"","s":"sig","p":[1950]},{"n":"SOFT MUSK","b":"","s":"sig","p":[1250]},{"n":"SOLAR TUBEROSE","b":"","s":"sig","p":[1400]},{"n":"SULTAN FANTASY II","b":"","s":"sig","p":[400]},{"n":"TOURMALINE","b":"","s":"sig","p":[800]},{"n":"TYGER EYE","b":"","s":"sig","p":[1150]},{"n":"VANILLA & AMBER","b":"","s":"sig","p":[750]},{"n":"VELVET ROSE","b":"","s":"sig","p":[1500]},{"n":"WHITE CEDAR","b":"","s":"sig","p":[1350]},{"n":"9PM","b":"AFNAN","s":"ar","p":[450]},{"n":"9PM REBEL","b":"AFNAN","s":"ar","p":[375,225]},{"n":"SUPREMACY MEN","b":"AFNAN","s":"ar","p":[700,450]},{"n":"BIN SHAIKH","b":"AHMAD AL MAGHRIBI","s":"ar","p":[475,225]},{"n":"IGNITE OUD","b":"AHMAD AL MAGHRIBI","s":"ar","p":[700,450]},{"n":"KAAF","b":"AHMAD AL MAGHRIBI","s":"ar","p":[450]},{"n":"MARJ","b":"AHMAD AL MAGHRIBI","s":"ar","p":[850,700,450]},{"n":"OUD AND ROSES","b":"AHMAD AL MAGHRIBI","s":"ar","p":[800,400,225]},{"n":"1001 NIGHTS","b":"AJMAL","s":"ar","p":[1500]},{"n":"AMBERWOOD","b":"AJMAL","s":"ar","p":[1650,875,225]},{"n":"SILK MUSK","b":"AJMAL","s":"ar","p":[800,400,225]},{"n":"MAGIC","b":"AL JAZEERA","s":"ar","p":[850,450,225]},{"n":"ASEEL","b":"AL REHAB","s":"ar","p":[350,225]},{"n":"DESIRE BLUE","b":"ALFRED DUNHILL","s":"en","p":[225]},{"n":"AMBERGRIS ABSOLUT","b":"AMBERGRIS ABSOLUT","s":"ar","p":[1850]},{"n":"BEACH HUT MAN","b":"AMOUAGE","s":"ar","p":[450]},{"n":"DECISION","b":"AMOUAGE","s":"ar","p":[875,450,225]},{"n":"EPIC","b":"AMOUAGE","s":"ar","p":[700,450]},{"n":"GOLD MEN","b":"AMOUAGE","s":"ar","p":[850]},{"n":"GUIDANCE","b":"AMOUAGE","s":"ar","p":[425,225]},{"n":"GUIDANCE 46","b":"AMOUAGE","s":"ar","p":[900,475,225]},{"n":"HONOUR MEN","b":"AMOUAGE","s":"ar","p":[950]},{"n":"HONOUR WOMEN","b":"AMOUAGE","s":"ar","p":[450,225]},{"n":"INTERLUDE","b":"AMOUAGE","s":"ar","p":[350,250,225]},{"n":"JOURNEY FOR MEN","b":"AMOUAGE","s":"ar","p":[850,475,225]},{"n":"LOVE TUBEROSE","b":"AMOUAGE","s":"ar","p":[575]},{"n":"LUSTRE","b":"AMOUAGE","s":"ar","p":[900,450,225]},{"n":"OUTLANDS","b":"AMOUAGE","s":"ar","p":[950,475,225]},{"n":"PURPOSE","b":"AMOUAGE","s":"ar","p":[750,400,225]},{"n":"PURPOSE 50","b":"AMOUAGE","s":"ar","p":[925,475,225]},{"n":"REFLECTION MEN","b":"AMOUAGE","s":"ar","p":[850,475,225]},{"n":"SEARCH","b":"AMOUAGE","s":"ar","p":[425,225]},{"n":"SINDBAD","b":"AMOUAGE","s":"ar","p":[450]},{"n":"SHAY","b":"ANFASIC DUKHOON","s":"ar","p":[375,225]},{"n":"SHAY OUD","b":"ANFASIC DUKHOON","s":"ar","p":[700]},{"n":"PINK SUGAR SENSUAL","b":"AQUOLINA","s":"en","p":[400,225]},{"n":"AOUD MADAWI","b":"ARABIAN OUD","s":"ar","p":[750,400,225]},{"n":"AOUD MADAWI GOLD","b":"ARABIAN OUD","s":"ar","p":[450,225]},{"n":"ARABIAN KNIGHT","b":"ARABIAN OUD","s":"ar","p":[350,225]},{"n":"EHSAS","b":"ARABIAN OUD","s":"ar","p":[400,225]},{"n":"FATENAH","b":"ARABIAN OUD","s":"ar","p":[850]},{"n":"MAJESTIC","b":"ARABIAN OUD","s":"ar","p":[550]},{"n":"NEW KALIMAT","b":"ARABIAN OUD","s":"ar","p":[1850]},{"n":"ORIENTAL OUD","b":"ARABIAN OUD","s":"ar","p":[1850]},{"n":"WOODY STYLE","b":"ARABIAN OUD","s":"ar","p":[1200]},{"n":"CLASSIC - BROWN","b":"ARAMIS","s":"en","p":[350,225]},{"n":"ACQUA DI GIO","b":"ARMANI","s":"en","p":[650,350,225]},{"n":"ACQUA DI GIO - PROFUMO","b":"ARMANI","s":"en","p":[650,350,225]},{"n":"ACQUA DI GIO ELIXIR","b":"ARMANI","s":"en","p":[850,400,225]},{"n":"ACQUA DI GIO PROFONDO","b":"ARMANI","s":"en","p":[450]},{"n":"BECAUSE ITS YOU","b":"ARMANI","s":"en","p":[850,450,225]},{"n":"CODE MEN","b":"ARMANI","s":"en","p":[775,350,225]},{"n":"CODE WOMEN","b":"ARMANI","s":"en","p":[750,400,225]},{"n":"MY WAY","b":"ARMANI","s":"en","p":[700,375,225]},{"n":"MY WAY NECTAR","b":"ARMANI","s":"en","p":[425,225]},{"n":"SI","b":"ARMANI","s":"en","p":[825]},{"n":"SI FIORI","b":"ARMANI","s":"en","p":[450,225]},{"n":"SI PASSION","b":"ARMANI","s":"en","p":[650,350,225]},{"n":"STRONGER WITH YOU","b":"ARMANI","s":"en","p":[675,375,225]},{"n":"STRONGER WITH YOU - AMBER","b":"ARMANI","s":"en","p":[695,400,225]},{"n":"STRONGER WITH YOU - OUD","b":"ARMANI","s":"en","p":[675,375,225]},{"n":"STRONGER WITH YOU - TOBACCO","b":"ARMANI","s":"en","p":[675,375,225]},{"n":"STRONGER WITH YOU INTENSLY","b":"ARMANI","s":"en","p":[425,225]},{"n":"STRONGER WITH YOU POWERFULLY","b":"ARMANI","s":"en","p":[450]},{"n":"STRONGER WITH YOU SANDAL","b":"ARMANI","s":"en","p":[825,425,225]},{"n":"ROUGE MALACHITE","b":"ARMANI PRIVE COLLECTION","s":"en","p":[825,425,225]},{"n":"LUNE FELINE","b":"ATELIER DES ORS","s":"en","p":[600,325,225]},{"n":"CHROME","b":"AZZARO","s":"en","p":[700]},{"n":"FOREVER WANTED ELIXIR","b":"AZZARO","s":"en","p":[425,225]},{"n":"MOST WANTED INTENSE","b":"AZZARO","s":"en","p":[425,225]},{"n":"THE MOST WANTED-PARFUM","b":"AZZARO","s":"en","p":[750,450,225]},{"n":"PINK CHIFFON","b":"BATH & BODY WORKS","s":"en","p":[450]},{"n":"312 SAINT HONORE","b":"BDK","s":"en","p":[475,225]},{"n":"CREME DE CUIR","b":"BDK","s":"en","p":[450,225]},{"n":"GRIS CHARNEL","b":"BDK","s":"en","p":[700,400,225]},{"n":"TABAC ROSE","b":"BDK","s":"en","p":[375,225]},{"n":"WHITE OUD","b":"BELLA VITA","s":"ar","p":[450]},{"n":"BLACK OUD","b":"BLACK OUD","s":"ar","p":[700,350,225]},{"n":"JONES BEACH","b":"BOND NO.9","s":"en","p":[475,225]},{"n":"POUR HOMME M","b":"BOUCHERON","s":"en","p":[400,225]},{"n":"FANTASY","b":"BRITNEY SPEARS","s":"en","p":[450]},{"n":"BODY","b":"BURBERRY","s":"en","p":[825,425,225]},{"n":"GODDESS","b":"BURBERRY","s":"en","p":[750,475,225]},{"n":"GODESS INTENSE","b":"BURBERRY","s":"en","p":[450,225]},{"n":"HER","b":"BURBERRY","s":"en","p":[750,450,225]},{"n":"HER ELIXIR","b":"BURBERRY","s":"en","p":[900,475,225]},{"n":"AQUA","b":"BVLGARI","s":"en","p":[400,225]},{"n":"FALKAR","b":"BVLGARI","s":"en","p":[400,225]},{"n":"MEN IN BLACK","b":"BVLGARI","s":"en","p":[775,425,225]},{"n":"THE BLANC","b":"BVLGARI","s":"en","p":[800,375,225]},{"n":"TYGAR","b":"BVLGARI","s":"en","p":[1300,425,225]},{"n":"ONEKH","b":"BVLGARI LE GEMME","s":"en","p":[550]},{"n":"BAL D'AFRIQUE","b":"BYREDO","s":"en","p":[825]},{"n":"BLACK SAFFRON","b":"BYREDO","s":"en","p":[375,225]},{"n":"EYES CLOSED","b":"BYREDO","s":"en","p":[850,450,225]},{"n":"MOJAVE GHOST","b":"BYREDO","s":"en","p":[450,225]},{"n":"ROSE OF NO MAN'S LAND","b":"BYREDO","s":"en","p":[825]},{"n":"CK ONE","b":"CALVIN KLEIN","s":"en","p":[600,325,225]},{"n":"ETERNITY","b":"CALVIN KLEIN","s":"en","p":[415,225]},{"n":"EUPHORIA WOMEN","b":"CALVIN KLEIN","s":"en","p":[350,225]},{"n":"OBSESSED","b":"CALVIN KLEIN","s":"en","p":[875]},{"n":"GOLDEN DUST","b":"CAPTAIN BLACK","s":"en","p":[350,225]},{"n":"212 SEXY","b":"CAROLINA HERRERA","s":"en","p":[450,225]},{"n":"212 V.I.P","b":"CAROLINA HERRERA","s":"en","p":[775]},{"n":"212 VIP ROSE LOVE NY","b":"CAROLINA HERRERA","s":"en","p":[850]},{"n":"BAD BOY COBALT ELIXIR","b":"CAROLINA HERRERA","s":"en","p":[600,325,225]},{"n":"CHIRIA WOMEN","b":"CAROLINA HERRERA","s":"en","p":[400]},{"n":"GOOD GIRL","b":"CAROLINA HERRERA","s":"en","p":[650,450,225]},{"n":"GOOD GIRL - BLUSH","b":"CAROLINA HERRERA","s":"en","p":[670,375,225]},{"n":"LA BOMBA","b":"CAROLINA HERRERA","s":"en","p":[875,450,225]},{"n":"SANDAL RUBY","b":"CAROLINA HERRERA","s":"en","p":[400,225]},{"n":"STALLION LEATHER","b":"CAROLINA HERRERA","s":"en","p":[750]},{"n":"LA PANTHERE","b":"CARTIER","s":"en","p":[450,225]},{"n":"PASHA","b":"CARTIER","s":"en","p":[375,225]},{"n":"ALLURE SPORT","b":"CHANEL","s":"en","p":[700,400,225]},{"n":"BLEU","b":"CHANEL","s":"en","p":[1300,375,225]},{"n":"BLEU EXCLUSIF","b":"CHANEL","s":"en","p":[900]},{"n":"BLEU EXCLUSIVE","b":"CHANEL","s":"en","p":[450,225]},{"n":"CHANCE","b":"CHANEL","s":"en","p":[350,225]},{"n":"CHANCE EAU SPLENDID","b":"CHANEL","s":"en","p":[875,425,225]},{"n":"CHANCE TENDER","b":"CHANEL","s":"en","p":[775,400,225]},{"n":"COCO MADEMOISELLE","b":"CHANEL","s":"en","p":[575,300,225]},{"n":"COROMANDEL","b":"CHANEL","s":"en","p":[450,225]},{"n":"EGOISTE PLATINUM","b":"CHANEL","s":"en","p":[650,375,225]},{"n":"NO. 5","b":"CHANEL","s":"en","p":[775,375,225]},{"n":"CHLOE EDP","b":"CHLOE","s":"en","p":[800,425,225]},{"n":"NOMADE","b":"CHLOE","s":"en","p":[425,225]},{"n":"NOMADE NUIT D'EGYPTE","b":"CHLOE","s":"en","p":[800]},{"n":"CIGAR","b":"CIGAR","s":"en","p":[300,225]},{"n":"HAPPY FOR MEN","b":"CLINIQUE","s":"en","p":[425,225]},{"n":"1872","b":"CLIVE CHRISTIAN","s":"en","p":[775,450,225]},{"n":"ABSOLU AVENTUS","b":"CREED","s":"en","p":[775,450,225]},{"n":"AVENTUS","b":"CREED","s":"en","p":[1350,775,225]},{"n":"CENTARAUS","b":"CREED","s":"en","p":[850,425,225]},{"n":"DELPHINUS","b":"CREED","s":"en","p":[375,225]},{"n":"ELADARIA","b":"CREED","s":"en","p":[900,450,225]},{"n":"GREEN IRISH TWEED","b":"CREED","s":"en","p":[425,225]},{"n":"OUD ZARIA","b":"CREED","s":"en","p":[950,475,225]},{"n":"SILVER MOUNTAIN WATER","b":"CREED","s":"en","p":[450,225]},{"n":"UNIQUE LUXURY","b":"CRUSH ON ME","s":"en","p":[450,225]},{"n":"DEVOTION","b":"D&G","s":"en","p":[650,375,225]},{"n":"KING INTENSE","b":"D&G","s":"en","p":[750]},{"n":"LIGHT BLUE","b":"D&G","s":"en","p":[650,350,225]},{"n":"LIGHT BLUE WOMEN","b":"D&G","s":"en","p":[700,350]},{"n":"LIMPERATRICE N3","b":"D&G","s":"en","p":[675,350,225]},{"n":"THE ONE MEN","b":"D&G","s":"en","p":[650]},{"n":"THE ONE WOMEN","b":"D&G","s":"en","p":[650]},{"n":"COOL WATEER WOMEN","b":"DAVIDOFF","s":"en","p":[300,225]},{"n":"COOL WATER FOR MEN","b":"DAVIDOFF","s":"en","p":[300,225]},{"n":"SHALIS WOMEN","b":"DE REMY MARQUIS","s":"en","p":[375,225]},{"n":"DESIGNER SHEIKH 77","b":"DESIGNER SHEIKH","s":"ar","p":[750,400,225]},{"n":"OPULENT SHEIKH GOD EDITION","b":"DESIGNER SHEIKH","s":"ar","p":[1850]},{"n":"BALADA SAUVAGE","b":"DIOR","s":"en","p":[775,425]},{"n":"BOIS D AGENT","b":"DIOR","s":"en","p":[425,225]},{"n":"BOIS TALISMAN","b":"DIOR","s":"en","p":[875,450,225]},{"n":"DIOR ADDICT 2","b":"DIOR","s":"en","p":[450,225]},{"n":"DIOR HOMME - SPORT","b":"DIOR","s":"en","p":[650,375,225]},{"n":"DIOR HOMME INTENSE","b":"DIOR","s":"en","p":[600,400,225]},{"n":"FAHRENHEIT","b":"DIOR","s":"en","p":[350,225]},{"n":"J'ADORE","b":"DIOR","s":"en","p":[375,225]},{"n":"MISS DIOR - EAU DE PARFUM","b":"DIOR","s":"en","p":[550]},{"n":"MISS DIOR BLOOMING BOUQUET","b":"DIOR","s":"en","p":[425,225]},{"n":"MISS DIOR EDP","b":"DIOR","s":"en","p":[775,375,225]},{"n":"MISS DIOR ESSENCE","b":"DIOR","s":"en","p":[850,425,225]},{"n":"PURE POISON","b":"DIOR","s":"en","p":[750,375]},{"n":"PURPLE OUD","b":"DIOR","s":"en","p":[450,225]},{"n":"SAUVAGE","b":"DIOR","s":"en","p":[1350,750,225]},{"n":"SAUVAGE ELIXIR","b":"DIOR","s":"en","p":[750,400,225]},{"n":"TOBACOLOR","b":"DIOR","s":"en","p":[450,225]},{"n":"GRIS DIOR","b":"DIOR - COLLECTION PRIVEE","s":"en","p":[750,400,225]},{"n":"OUD ISPAHAN","b":"DIOR - COLLECTION PRIVEE","s":"en","p":[800,450,225]},{"n":"DO SON","b":"DIPTYQUE","s":"en","p":[425,225]},{"n":"EAU DE ROSE","b":"DIPTYQUE","s":"en","p":[775]},{"n":"EAU DE SENSE","b":"DIPTYQUE","s":"en","p":[425,225]},{"n":"L'OMBRE DANS L'EAU","b":"DIPTYQUE","s":"en","p":[800]},{"n":"ORPHEON","b":"DIPTYQUE","s":"en","p":[450,225]},{"n":"PHILOSYKOS","b":"DIPTYQUE","s":"en","p":[650,350,225]},{"n":"BE DELICIOUS","b":"DKNY","s":"en","p":[425,225]},{"n":"DESIRE BLUE","b":"DUNHILL","s":"en","p":[400,225]},{"n":"DESIRE RED","b":"DUNHILL","s":"en","p":[350,225]},{"n":"ICON","b":"DUNHILL","s":"en","p":[425,225]},{"n":"MIAMI BLOSSOM","b":"ESCADA","s":"en","p":[400,225]},{"n":"MOON SPARKLE","b":"ESCADA","s":"en","p":[600,325,225]},{"n":"SORBETTO ROSSO","b":"ESCADA","s":"en","p":[425,225]},{"n":"ESCENTRIC 02","b":"ESCENTRIC MOLECULES","s":"en","p":[450,225]},{"n":"H01","b":"ESCENTRIC MOLECULES","s":"en","p":[675]},{"n":"MOLECULES 2","b":"ESCENTRIC MOLECULES","s":"en","p":[1400]},{"n":"BOIS IMPERIAL EXTRAIT","b":"ESSENTIAL PARFUMS","s":"en","p":[875,450,225]},{"n":"BOISE IMPERIAL","b":"ESSENTIAL PARFUMS","s":"en","p":[1350,450,225]},{"n":"BEAUTIFUL","b":"ESTEE LAUDER","s":"en","p":[700,350,225]},{"n":"MODERN MUSE","b":"ESTEE LAUDER","s":"en","p":[850,375,225]},{"n":"PLEASURE","b":"ESTEE LAUDER","s":"en","p":[775,375,225]},{"n":"EXPERIMENTUM CRUSIS","b":"ETAT LIBRE D'ORANGE","s":"en","p":[1450,450,225]},{"n":"BLUE TALISMAN","b":"EX NIHILO","s":"en","p":[650,375,225]},{"n":"FLEUR NORCOTIQUE","b":"EX NIHILO","s":"en","p":[450,225]},{"n":"FURIOUS","b":"FENDI","s":"en","p":[425,225]},{"n":"OFFICE FOR MEN","b":"FRAGRANCE ONE","s":"en","p":[700]},{"n":"PORTRAIT OF LADY","b":"FREDERIC MALLE","s":"en","p":[400,225]},{"n":"UNCUT GEM","b":"FREDERIC MALLE","s":"en","p":[875,475,225]},{"n":"PAINTER","b":"GENYUM","s":"en","p":[400,225]},{"n":"BIANCO LATTE","b":"GIARDINI DI TOSCANA","s":"en","p":[850,425,225]},{"n":"HUDSON VALLEY","b":"GISSAH","s":"ar","p":[775,400,225]},{"n":"IMPERIAL VALLEY","b":"GISSAH","s":"ar","p":[1300,350,225]},{"n":"LA LUNA","b":"GISSAH","s":"ar","p":[650,375,225]},{"n":"ONE&ONLY","b":"GISSAH","s":"ar","p":[850,450,225]},{"n":"VESTA MUSK","b":"GISSAH","s":"ar","p":[450,225]},{"n":"GARCON MANQUE","b":"GIVENCHY","s":"en","p":[450]},{"n":"GENTLEMAN","b":"GIVENCHY","s":"en","p":[375,225]},{"n":"GENTLEMAN SOCIETY EDP AMBREE","b":"GIVENCHY","s":"en","p":[825,400,225]},{"n":"GENTLEMAN SOCIETY EXTREME","b":"GIVENCHY","s":"en","p":[450,225]},{"n":"L'INTERDIT","b":"GIVENCHY","s":"en","p":[375,225]},{"n":"LINTREDIT LE PARFUM","b":"GIVENCHY","s":"en","p":[850,425,225]},{"n":"VERY IRRESISTABLE","b":"GIVENCHY","s":"en","p":[475,225]},{"n":"VERY IRRESISTABLE INTENSE","b":"GIVENCHY","s":"en","p":[475,225]},{"n":"BAMBOO","b":"GUCCI","s":"en","p":[450,225]},{"n":"BLOOM","b":"GUCCI","s":"en","p":[600,300,225]},{"n":"FLORA","b":"GUCCI","s":"en","p":[650,350,225]},{"n":"GUCCI RUSH 2","b":"GUCCI","s":"en","p":[350,225]},{"n":"GUILTY POUR HOMME","b":"GUCCI","s":"en","p":[400,225]},{"n":"INTENSE OUD","b":"GUCCI","s":"en","p":[700,450]},{"n":"RUSH WOMEN","b":"GUCCI","s":"en","p":[350,225]},{"n":"ANGELIC NOIR","b":"GUERLAIN","s":"en","p":[475,225]},{"n":"INSOLENCE","b":"GUERLAIN","s":"en","p":[475,225]},{"n":"MUSC OUTREBLANC","b":"GUERLAIN","s":"en","p":[475,225]},{"n":"SANTA ROYAL","b":"GUERLAIN","s":"en","p":[475,225]},{"n":"SPIRITUESE DOUBLE VANILLE","b":"GUERLAIN","s":"en","p":[425,225]},{"n":"BARENIA","b":"HERMES","s":"en","p":[450,225]},{"n":"TERE D'HERMES INTENSE","b":"HERMES","s":"en","p":[875,450,225]},{"n":"TERRE DHERMES","b":"HERMES","s":"en","p":[675,375,225]},{"n":"OUD ALEZAN","b":"HERMES PRIVEE COLLECTION","s":"en","p":[925,475,225]},{"n":"BOSS BOTTLED - ELIXIR","b":"HUGO BOSS","s":"en","p":[650,350,225]},{"n":"BOSS THE SCENT ELIXIR INTENSE","b":"HUGO BOSS","s":"en","p":[750]},{"n":"BOTTLED","b":"HUGO BOSS","s":"en","p":[350,225]},{"n":"BOTTLED BOLD CITRUS","b":"HUGO BOSS","s":"en","p":[725,350,225]},{"n":"ELGANT VTVYER","b":"HUGO BOSS","s":"en","p":[500,225]},{"n":"FEMME","b":"HUGO BOSS","s":"en","p":[425,225]},{"n":"GREEN","b":"HUGO BOSS","s":"en","p":[350,225]},{"n":"THE SCENT - MAGNETIC","b":"HUGO BOSS","s":"en","p":[600,350,225]},{"n":"VIGOROUS COLOGN","b":"HUGO BOSS","s":"en","p":[500,225]},{"n":"OUD FOR GREATNESS","b":"INITIO PARFUMS PRIVES","s":"en","p":[675,400,225]},{"n":"LE SEL D'ISSEY","b":"ISSEY MIYAKE","s":"en","p":[475,225]},{"n":"SILVER SCENT","b":"JACQUES BOGART","s":"en","p":[450,225]},{"n":"GAULTIER DIVINE","b":"JEAN PAUL GAULTIER","s":"en","p":[900]},{"n":"LA BELLE FLOWER EDITION","b":"JEAN PAUL GAULTIER","s":"en","p":[450,225]},{"n":"LE BEAU","b":"JEAN PAUL GAULTIER","s":"en","p":[450,225]},{"n":"LE BEAU PARADISE GARDEN","b":"JEAN PAUL GAULTIER","s":"en","p":[650,375,225]},{"n":"LE MALE - LE PARFUM","b":"JEAN PAUL GAULTIER","s":"en","p":[675,400,225]},{"n":"LE MALE ELIXIR","b":"JEAN PAUL GAULTIER","s":"en","p":[675,400,225]},{"n":"LE MALE ELIXIR ABS","b":"JEAN PAUL GAULTIER","s":"en","p":[475,225]},{"n":"SCANDAL","b":"JEAN PAUL GAULTIER","s":"en","p":[750,450,225]},{"n":"SCANDAL ABSOLUTE M","b":"JEAN PAUL GAULTIER","s":"en","p":[450,225]},{"n":"SCANDAL ABSOLUTE W","b":"JEAN PAUL GAULTIER","s":"en","p":[450,225]},{"n":"SCANDAL BY NIGHT","b":"JEAN PAUL GAULTIER","s":"en","p":[775]},{"n":"SCANDAL INTENSE POUR HOMME","b":"JEAN PAUL GAULTIER","s":"en","p":[450,225]},{"n":"SCANDALE POUR HOMME","b":"JEAN PAUL GAULTIER","s":"en","p":[450,225]},{"n":"ULTRA MALE","b":"JEAN PAUL GAULTIER","s":"en","p":[450,225]},{"n":"BLACKBERRY & BAY COLOGNE","b":"JO MALONE","s":"en","p":[825,435]},{"n":"ENGLISH PEAR&FREEZIA COLOGNE","b":"JO MALONE","s":"en","p":[425,225]},{"n":"LIME BASIL & MANDARIN COLOGNE","b":"JO MALONE","s":"en","p":[475,225]},{"n":"NECTARINE","b":"JO MALONE","s":"en","p":[450,225]},{"n":"OUD & BERGAMOT","b":"JO MALONE","s":"en","p":[700,450]},{"n":"WOOD SAGE & SEA SALT","b":"JO MALONE","s":"en","p":[450,225]},{"n":"HOMME","b":"JOOP","s":"en","p":[375,225]},{"n":"VIVA LA JUICY","b":"JUICY COUTURE","s":"en","p":[450,225]},{"n":"POWDER LOVE","b":"JULIETTE","s":"en","p":[450]},{"n":"DAHAB","b":"KAJAL","s":"en","p":[375,225]},{"n":"EDEN JUICY APPLE","b":"KAYALI","s":"en","p":[425,225]},{"n":"FLEUR MAJESTY ROSE ROYALE 31","b":"KAYALI","s":"en","p":[425,400,225]},{"n":"LOVEFEST BURNING CHERRY","b":"KAYALI","s":"en","p":[450,225]},{"n":"ORANGE BLOSSOM 24","b":"KAYALI","s":"en","p":[450,225]},{"n":"OUDGASM ROSE OUD 16","b":"KAYALI","s":"en","p":[450,225]},{"n":"VANILLA 28","b":"KAYALI","s":"en","p":[425,225]},{"n":"VANILLA CANDY ROCK SUGAR 42","b":"KAYALI","s":"en","p":[700]},{"n":"YUM BOUJEE MARSHMALLOW 81","b":"KAYALI","s":"en","p":[875,450,225]},{"n":"YUM PISTACHIO GILLATO","b":"KAYALI","s":"en","p":[775,400,225]},{"n":"KENZO HOMME EDT","b":"KENZO","s":"en","p":[675,400,225]},{"n":"ANGEL SHARE","b":"KILLIAN","s":"en","p":[1300,625,225]},{"n":"ANGEL SHARE PARADISE","b":"KILLIAN","s":"en","p":[775,400,225]},{"n":"BLACK PANTOM","b":"KILLIAN","s":"en","p":[450,225]},{"n":"GOOD GIRL GONE BAD","b":"KILLIAN","s":"en","p":[850,450,225]},{"n":"OLD FASHIONED","b":"KILLIAN","s":"en","p":[425,225]},{"n":"PRINCESS","b":"KILLIAN","s":"en","p":[450,225]},{"n":"12 SILVER GREY","b":"LACOSTE","s":"en","p":[415,225]},{"n":"12 SILVER ROSE","b":"LACOSTE","s":"en","p":[425,225]},{"n":"LACOSTE WHITE","b":"LACOSTE","s":"en","p":[475,225]},{"n":"TOUCH OF PINK","b":"LACOSTE","s":"en","p":[725,375]},{"n":"AMETHYST","b":"LALIQUE","s":"en","p":[475,225]},{"n":"ENCRE NOIRE","b":"LALIQUE","s":"en","p":[750,375,225]},{"n":"LAMOUR","b":"LALIQUE","s":"en","p":[675,375,225]},{"n":"HYPNOSE W","b":"LANCOME","s":"en","p":[400,225]},{"n":"IDOLE","b":"LANCOME","s":"en","p":[400,225]},{"n":"LA VIE EST BELLE","b":"LANCOME","s":"en","p":[900,250,225]},{"n":"LAVIE EST BELLE VANILLE NUDE","b":"LANCOME","s":"en","p":[850,425,225]},{"n":"MIRACLE","b":"LANCOME","s":"en","p":[415,225]},{"n":"TRESOR MID NIGHT ROSE","b":"LANCOME","s":"en","p":[425,225]},{"n":"TRESSOR LA NUIT VANILLA NOIR","b":"LANCOME","s":"en","p":[825,400,225]},{"n":"ECLAT D'ARPREG","b":"LANVIN","s":"en","p":[250,225]},{"n":"MARRY ME","b":"LANVIN","s":"en","p":[425,225]},{"n":"ATHEERI","b":"LATTAFA","s":"ar","p":[425,225]},{"n":"ECLAIRE","b":"LATTAFA","s":"ar","p":[800,375,225]},{"n":"KHAMRA QAHWA","b":"LATTAFA","s":"ar","p":[400,225]},{"n":"KHAMRAH","b":"LATTAFA","s":"ar","p":[650,375,225]},{"n":"KHAMRAH DUKHAN","b":"LATTAFA","s":"ar","p":[775,375,225]},{"n":"MAYAR","b":"LATTAFA","s":"ar","p":[375,225]},{"n":"VICTORIA","b":"LATTAFA","s":"ar","p":[425,225]},{"n":"YARA PINK","b":"LATTAFA","s":"ar","p":[725,375,225]},{"n":"SENSUAL ORCHID","b":"LAURENT MAZZONE","s":"en","p":[375,225]},{"n":"BLUE LAVERNE BAKHUR","b":"LAVERNE","s":"ar","p":[825]},{"n":"ANOTHER 13","b":"LE LABO","s":"en","p":[850,425,225]},{"n":"SANTAL 33","b":"LE LABO","s":"en","p":[425,225]},{"n":"1992 PURPLE NIGHT","b":"LES BAINS GUERBOIS","s":"en","p":[500,225]},{"n":"AFTERNOON SWIM","b":"LOUIS VUITTON","s":"en","p":[850,425,225]},{"n":"ATTRAPE-REVES","b":"LOUIS VUITTON","s":"en","p":[850,425,225]},{"n":"COEUR BATTANT","b":"LOUIS VUITTON","s":"en","p":[475,225]},{"n":"DANS LA PEAU","b":"LOUIS VUITTON","s":"en","p":[875]},{"n":"ELVES","b":"LOUIS VUITTON","s":"en","p":[875,450,225]},{"n":"FANTASMAGORY","b":"LOUIS VUITTON","s":"en","p":[450,225]},{"n":"FLUER DE DESERT","b":"LOUIS VUITTON","s":"en","p":[475,225]},{"n":"IMAGINATION","b":"LOUIS VUITTON","s":"en","p":[1400,450,225]},{"n":"L'IMMENSITE","b":"LOUIS VUITTON","s":"en","p":[650,400,225]},{"n":"LES SABLES ROSES","b":"LOUIS VUITTON","s":"en","p":[850,425,225]},{"n":"LVERS","b":"LOUIS VUITTON","s":"en","p":[700,400,225]},{"n":"MYRIAD","b":"LOUIS VUITTON","s":"en","p":[700,400,225]},{"n":"NOUVEAU MONDE","b":"LOUIS VUITTON","s":"en","p":[800,400,225]},{"n":"OMBRE NOMADE","b":"LOUIS VUITTON","s":"en","p":[1450,400,225]},{"n":"PACIFIC CHILL","b":"LOUIS VUITTON","s":"en","p":[650,350,225]},{"n":"PUR SANTAL","b":"LOUIS VUITTON","s":"en","p":[450]},{"n":"SPELL ON YOU","b":"LOUIS VUITTON","s":"en","p":[850,425,225]},{"n":"STELLAR TIMES","b":"LOUIS VUITTON","s":"en","p":[750,400,225]},{"n":"SUNG SONG","b":"LOUIS VUITTON","s":"en","p":[475,225]},{"n":"HIBISCUS MAHAJAD","b":"MAISON CRIVELLI","s":"en","p":[1275,400,225]},{"n":"OUD CADENZA","b":"MAISON CRIVELLI","s":"en","p":[425,225]},{"n":"OUD MARACUJA","b":"MAISON CRIVELLI","s":"en","p":[1300,700,225]},{"n":"OUD STALLION","b":"MAISON CRIVELLI","s":"en","p":[675,375,225]},{"n":"SAFRAN SECRET","b":"MAISON CRIVELLI","s":"en","p":[475,225]},{"n":"A LA ROSE L'HOMME","b":"MAISON FRANCIS KURKDJIAN","s":"en","p":[775]},{"n":"BACCARAT ROUGE 540","b":"MAISON FRANCIS KURKDJIAN","s":"en","p":[1325,375,225]},{"n":"GENTLE FLUIDITY SILVER","b":"MAISON FRANCIS KURKDJIAN","s":"en","p":[450,225]},{"n":"GRAND SOIR","b":"MAISON FRANCIS KURKDJIAN","s":"en","p":[700,400,225]},{"n":"KURKY","b":"MAISON FRANCIS KURKDJIAN","s":"en","p":[825,400,225]},{"n":"M.F.K 724","b":"MAISON FRANCIS KURKDJIAN","s":"en","p":[450,225]},{"n":"OUD SATIN MOOD - EXTRAIT","b":"MAISON FRANCIS KURKDJIAN","s":"en","p":[700,400,225]},{"n":"BY THE FIREPLACE","b":"MAISON MARGIELA","s":"en","p":[800,425,225]},{"n":"JAZZ CLUB","b":"MAISON MARGIELA","s":"en","p":[825]},{"n":"AOUD VANILLE","b":"MANCERA","s":"en","p":[825]},{"n":"AOUD VIOLET","b":"MANCERA","s":"en","p":[850]},{"n":"BLACK VANILLA","b":"MANCERA","s":"en","p":[400,225]},{"n":"LEMON MINT","b":"MANCERA","s":"en","p":[450,225]},{"n":"RED TOBACCO","b":"MANCERA","s":"en","p":[475,225]},{"n":"ROSES VANILLA","b":"MANCERA","s":"en","p":[475,225]},{"n":"ROSES VANILLE","b":"MANCERA","s":"en","p":[775]},{"n":"ROYAL VANILLA","b":"MANCERA","s":"en","p":[750]},{"n":"GANYMEDE","b":"MARC ANTOINE BARROIS","s":"en","p":[350,225]},{"n":"GANYMEDE EXTRAIT","b":"MARC ANTOINE BARROIS","s":"en","p":[600]},{"n":"TILIA","b":"MARC ANTOINE BARROIS","s":"en","p":[450,225]},{"n":"CRYSTAL SAFFRON","b":"MATIERE PREMIERE","s":"en","p":[625,350,225]},{"n":"ENCENS SUAVE","b":"MATIERE PREMIERE","s":"en","p":[800]},{"n":"FALCONE LEATHER","b":"MATIERE PREMIERE","s":"en","p":[825]},{"n":"VANILLA POWDER","b":"MATIERE PREMIERE","s":"en","p":[700,375,225]},{"n":"IRISH LEATHER","b":"MEMO","s":"en","p":[575,375,225]},{"n":"ITALIAN LEATHER","b":"MEMO","s":"en","p":[450,225]},{"n":"MADURAI","b":"MEMO","s":"en","p":[925,465,225]},{"n":"EXPLORER","b":"MONT BLANC","s":"en","p":[475,225]},{"n":"LEGEND","b":"MONT BLANC","s":"en","p":[650,250,225]},{"n":"LEGEND BLUE","b":"MONT BLANC","s":"en","p":[325,225]},{"n":"STARWALKER","b":"MONT BLANC","s":"en","p":[425,225]},{"n":"ARABIANS TONKA","b":"MONTALE","s":"en","p":[650,350,225]},{"n":"BUBBLE FOREVER","b":"MONTALE","s":"en","p":[800,450,225]},{"n":"CHOCOLATE GREEDY","b":"MONTALE","s":"en","p":[375,225]},{"n":"INTENSE CAFE","b":"MONTALE","s":"en","p":[825,400,225]},{"n":"OUD DREAM","b":"MONTALE","s":"en","p":[950]},{"n":"RISTRETTO INTENSE CAFE","b":"MONTALE","s":"en","p":[750]},{"n":"ROSES MUSK","b":"MONTALE","s":"en","p":[800,425,225]},{"n":"FUNNY","b":"MOSCHINO","s":"en","p":[700,350]},{"n":"MUSK MUTASALIK","b":"MUSK MUTASALIK","s":"ar","p":[625,300,225]},{"n":"MUSK TAHARA","b":"MUSK TAHARA","s":"ar","p":[800,375,225]},{"n":"ALL ABOUT ME","b":"NARCISO RODRIGUEZ","s":"en","p":[750]},{"n":"FOR HER EDP INTENSE","b":"NARCISO RODRIGUEZ","s":"en","p":[825,400,225]},{"n":"FOR HIM VETIVER MUSC","b":"NARCISO RODRIGUEZ","s":"en","p":[475,225]},{"n":"MUSC NOIR - FOR HER","b":"NARCISO RODRIGUEZ","s":"en","p":[600,350,225]},{"n":"PURE MUSK FOR HER","b":"NARCISO RODRIGUEZ","s":"en","p":[425,225]},{"n":"BLACK AFGHANO","b":"NASOMATTO","s":"en","p":[750,300,225]},{"n":"SADONASO","b":"NASOMATTO","s":"en","p":[475,225]},{"n":"VOYAGE","b":"NAUTICA","s":"en","p":[375,225]},{"n":"ANI","b":"NISHANE","s":"en","p":[600,300,225]},{"n":"HACIVAT","b":"NISHANE","s":"en","p":[425,225]},{"n":"HACIVAT X","b":"NISHANE","s":"en","p":[675,375,225]},{"n":"NEFS","b":"NISHANE","s":"en","p":[425,225]},{"n":"WULONG CHA","b":"NISHANE","s":"en","p":[425,225]},{"n":"CADEN","b":"OMAN LUXURY PERFUME","s":"ar","p":[700]},{"n":"AMBRE ROYAL","b":"ORMONDE JAYNE","s":"en","p":[600,325,225]},{"n":"OUD FLOR PERFUME","b":"ORMONDE JAYNE","s":"en","p":[700]},{"n":"MEGAMARE","b":"ORTO PARISI","s":"en","p":[1500,375,225]},{"n":"TERRONI","b":"ORTO PARISI","s":"en","p":[675,375,225]},{"n":"OUD MUSK","b":"OUD MUSK","s":"ar","p":[350,225]},{"n":"1 MILLION","b":"PACO RABANNE","s":"en","p":[750,400,225]},{"n":"1 MILLION ELIXIR","b":"PACO RABANNE","s":"en","p":[700,400,225]},{"n":"1 MILLION GOLD FOR HER EDP","b":"PACO RABANNE","s":"en","p":[425,225]},{"n":"1 MILLION LUCKY","b":"PACO RABANNE","s":"en","p":[825,400,225]},{"n":"1 MILLION MEN","b":"PACO RABANNE","s":"en","p":[550]},{"n":"INVICTUS","b":"PACO RABANNE","s":"en","p":[375,300,225]},{"n":"INVICTUS VICTORY ELIXIR EDP INTENSE","b":"PACO RABANNE","s":"en","p":[450]},{"n":"LADY MILLION","b":"PACO RABANNE","s":"en","p":[425,225]},{"n":"LADY MILLIONA","b":"PACO RABANNE","s":"en","p":[300,225]},{"n":"MIDNIGHT SEX","b":"PACO RABANNE","s":"en","p":[425,225]},{"n":"MILLION GOLD FOR HER","b":"PACO RABANNE","s":"en","p":[825,450,225]},{"n":"MILLION GOLD INTENSE EDP","b":"PACO RABANNE","s":"en","p":[400,225]},{"n":"OLYMPIA","b":"PACO RABANNE","s":"en","p":[450,225]},{"n":"OLYMPIA ABSOLU","b":"PACO RABANNE","s":"en","p":[800,400,225]},{"n":"OUD MONTAIGNE","b":"PACO RABANNE","s":"en","p":[875,450,225]},{"n":"PHANTOM ELIXIR","b":"PACO RABANNE","s":"en","p":[875,450,225]},{"n":"XS BLACK","b":"PACO RABANNE","s":"en","p":[375,225]},{"n":"PURPLE PARFUMS 24","b":"PARFUMS 24","s":"en","p":[825]},{"n":"ALTHAIR","b":"PARFUMS DE MARLY","s":"en","p":[700,425,225]},{"n":"CASTLEY","b":"PARFUMS DE MARLY","s":"en","p":[850,425,225]},{"n":"DELINA","b":"PARFUMS DE MARLY","s":"en","p":[650,350,225]},{"n":"DELINA LA ROSEE EDP","b":"PARFUMS DE MARLY","s":"en","p":[475,225]},{"n":"GREENLY","b":"PARFUMS DE MARLY","s":"en","p":[450,225]},{"n":"LAYTON EXCLUSIVE","b":"PARFUMS DE MARLY","s":"en","p":[675,375,225]},{"n":"PALATINE","b":"PARFUMS DE MARLY","s":"en","p":[425,225]},{"n":"PEGASUS","b":"PARFUMS DE MARLY","s":"en","p":[500,475,225]},{"n":"PERCIVAL","b":"PARFUMS DE MARLY","s":"en","p":[575]},{"n":"PERSUES","b":"PARFUMS DE MARLY","s":"en","p":[425,225]},{"n":"VALAYA EXCLUSIVE","b":"PARFUMS DE MARLY","s":"en","p":[775,375,225]},{"n":"FORTUITOUS FINLEY","b":"PENHALIGON'S","s":"en","p":[875,450,225]},{"n":"HALFETI","b":"PENHALIGON'S","s":"en","p":[425,225]},{"n":"LORD GEORGE","b":"PENHALIGON'S","s":"en","p":[425,225]},{"n":"CANDY","b":"PRADA","s":"en","p":[775,375]},{"n":"LUNA ROSSA BLACK","b":"PRADA","s":"en","p":[650,375,225]},{"n":"PARADIGME","b":"PRADA","s":"en","p":[850,425,225]},{"n":"PARADOXE","b":"PRADA","s":"en","p":[725,425,225]},{"n":"PARADOXE RADICAL ESSENCE","b":"PRADA","s":"en","p":[825,400,225]},{"n":"POLO BLACK","b":"RALPH LAUREN","s":"en","p":[400,225]},{"n":"POLO RED","b":"RALPH LAUREN","s":"en","p":[415,225]},{"n":"POLO SPORT","b":"RALPH LAUREN","s":"en","p":[700,350]},{"n":"HAWAS ICE","b":"RASASI","s":"ar","p":[700,450]},{"n":"FENTY DE FENTY","b":"RIHANNA","s":"en","p":[500,225]},{"n":"EDP WOMEN","b":"ROBERTO CAVALLI","s":"en","p":[875,400,225]},{"n":"OPEN","b":"ROGER & GALLET","s":"en","p":[300,250,225]},{"n":"APEX","b":"ROJA","s":"en","p":[450,225]},{"n":"ELYSIUM","b":"ROJA","s":"en","p":[750,400,225]},{"n":"SCULPTURE","b":"SCULPTURE","s":"en","p":[350,225]},{"n":"SENSUAL","b":"SENSUAL","s":"en","p":[325,225]},{"n":"SHEIKH GOLD F","b":"SHAIK","s":"ar","p":[700]},{"n":"SHAIKHUNA","b":"SHAIKHUNA","s":"ar","p":[650,300,225]},{"n":"SHEIKH AL AMBER","b":"SHEIKH AL AMBER","s":"ar","p":[2000]},{"n":"ZEN","b":"SHISEIDO","s":"en","p":[450,225]},{"n":"SO OUD","b":"SO OUD","s":"en","p":[325,225]},{"n":"ACCENTO","b":"SOSPIRO","s":"en","p":[700,450]},{"n":"ACCENTO BY SOSPIRO","b":"SOSPIRO","s":"en","p":[625]},{"n":"ERBA PURA","b":"SOSPIRO","s":"en","p":[1300,400,225]},{"n":"GOD OF FIRE","b":"STEPHANE HUMBERT LUCAS 77","s":"en","p":[825,425,225]},{"n":"SULTAN","b":"SULTAN","s":"ar","p":[675,300,225]},{"n":"HABEITAK","b":"SWISS ARABIAN","s":"ar","p":[700]},{"n":"SHAGHAF OUD","b":"SWISS ARABIAN","s":"ar","p":[700,450]},{"n":"SWISS ROSE","b":"SWISS ROSE","s":"en","p":[650,300,225]},{"n":"TEA ROSE","b":"TEA ROSE","s":"en","p":[275,225]},{"n":"ALIEN","b":"THIERRY MUGLER","s":"en","p":[625,350,225]},{"n":"ANGEL NOVA","b":"THIERRY MUGLER","s":"en","p":[450,225]},{"n":"APRES L'AMOUR NO.4","b":"THOMAS KOSMALA","s":"en","p":[400,225]},{"n":"KIRKE","b":"TIZIANA TERENZI","s":"en","p":[550,375,225]},{"n":"BITTER PEACH","b":"TOM FORD","s":"en","p":[450,225]},{"n":"BLACK ORCHID","b":"TOM FORD","s":"en","p":[450,225]},{"n":"BOIS PACIFIQUE","b":"TOM FORD","s":"en","p":[450,225]},{"n":"COSTA AZZURA","b":"TOM FORD","s":"en","p":[675,375,225]},{"n":"F.FABULOUS","b":"TOM FORD","s":"en","p":[700,400,225]},{"n":"LOST CHERRY","b":"TOM FORD","s":"en","p":[825,400,225]},{"n":"NEROLI PORTOFINO","b":"TOM FORD","s":"en","p":[425,225]},{"n":"NOIR DE NOIR","b":"TOM FORD","s":"en","p":[425,225]},{"n":"OMBRE LEATHER","b":"TOM FORD","s":"en","p":[650,425,225]},{"n":"OUD VOYAGE","b":"TOM FORD","s":"en","p":[900,450,225]},{"n":"OUD WOOD","b":"TOM FORD","s":"en","p":[750,450,225]},{"n":"ROSE EXPOSED","b":"TOM FORD","s":"en","p":[850,425,225]},{"n":"ROSE PRICK","b":"TOM FORD","s":"en","p":[450,225]},{"n":"SOLEIL NEIGE","b":"TOM FORD","s":"en","p":[465,225]},{"n":"TOBACCO OUD","b":"TOM FORD","s":"en","p":[425,225]},{"n":"TOBACCO VANILLA","b":"TOM FORD","s":"en","p":[450,225]},{"n":"TUSCAN LEATHER","b":"TOM FORD","s":"en","p":[425,250,225]},{"n":"TUSCANY CUIR M","b":"TOM FORD","s":"en","p":[450]},{"n":"VANILLA S","b":"TOM FORD","s":"en","p":[425,225]},{"n":"TOMMY GIRL SUMMER","b":"TOMMY HILFIGER","s":"en","p":[350,225]},{"n":"TOUCH ME","b":"TOUCH ME","s":"en","p":[650,300,225]},{"n":"DONNA WOMEN","b":"TRUSSARDI","s":"en","p":[775]},{"n":"KUTAY","b":"UNIQUE'E LUXURY","s":"en","p":[475,225]},{"n":"MANGONIFISCENT EXTRIT DE PARFUM","b":"UNIQUE'E LUXURY","s":"en","p":[450,225]},{"n":"UOMO BORN IN ROMA","b":"VALENTINO","s":"en","p":[650,375,225]},{"n":"ORCHID LEATHER","b":"VAN CLEEF","s":"en","p":[400,225]},{"n":"BRIGHT CRYSTAL","b":"VERSACE","s":"en","p":[650,350,225]},{"n":"CRYSTAL NOIR","b":"VERSACE","s":"en","p":[400,225]},{"n":"DYLAN BLUE","b":"VERSACE","s":"en","p":[600,325,225]},{"n":"EROS","b":"VERSACE","s":"en","p":[650,350,225]},{"n":"EROS ENERGY","b":"VERSACE","s":"en","p":[750,400,225]},{"n":"EROS FLAME","b":"VERSACE","s":"en","p":[650,350,225]},{"n":"POUR HOMME","b":"VERSACE","s":"en","p":[450,225]},{"n":"YELLOW DIAMOND","b":"VERSACE","s":"en","p":[650,350,225]},{"n":"SOLE PATCHOULI","b":"VERTUS","s":"en","p":[625,350,225]},{"n":"BOMBSHELL","b":"VICTORIA'S SECRET","s":"en","p":[650,335,225]},{"n":"BOMBSHELL MAGIC","b":"VICTORIA'S SECRET","s":"en","p":[375,225]},{"n":"TEASE NOIR","b":"VICTORIA'S SECRET","s":"en","p":[750]},{"n":"VERY SEXY","b":"VICTORIA'S SECRET","s":"en","p":[400,225]},{"n":"SPICEBOMB","b":"VIKTOR & ROLF","s":"en","p":[700]},{"n":"SPICEBOMB EXTREME","b":"VIKTOR & ROLF","s":"en","p":[700,425,225]},{"n":"MANGO SKIN","b":"VILHELM PARFUMERIE","s":"en","p":[425,225]},{"n":"WARDA ISPARTA","b":"WARDA ISPARTA","s":"ar","p":[300,225]},{"n":"WARDA TAEF","b":"WARDA TAEF","s":"ar","p":[300,225]},{"n":"WHITE MUSK","b":"WHITE MUSK","s":"ar","p":[350,225]},{"n":"WHITE OUD","b":"WHITE OUD","s":"ar","p":[650,300,225]},{"n":"ALEXANDRIA","b":"XERJOFF","s":"en","p":[450,225]},{"n":"CASAMORATI - MEFISTO","b":"XERJOFF","s":"en","p":[475,225]},{"n":"EMPERIYAN","b":"XERJOFF","s":"en","p":[475,225]},{"n":"NAXOS","b":"XERJOFF","s":"en","p":[750,450,225]},{"n":"BABYCAT RAW BOURBOURNE","b":"YVES SAINT LAURENT","s":"en","p":[825,450,225]},{"n":"BLACK OPIUM","b":"YVES SAINT LAURENT","s":"en","p":[675,375,225]},{"n":"BLACK OPIUM - OVER RED","b":"YVES SAINT LAURENT","s":"en","p":[650,350,225]},{"n":"LA NUIT DE L HOMME","b":"YVES SAINT LAURENT","s":"en","p":[425,225]},{"n":"LIBRE - LE PARFUM","b":"YVES SAINT LAURENT","s":"en","p":[750,450,225]},{"n":"MY SELF ABSOLU","b":"YVES SAINT LAURENT","s":"en","p":[875,425,225]},{"n":"MYSELF","b":"YVES SAINT LAURENT","s":"en","p":[1325,700,225]},{"n":"Y","b":"YVES SAINT LAURENT","s":"en","p":[450,225]},{"n":"Y L'ELIXIR","b":"YVES SAINT LAURENT","s":"en","p":[850]},{"n":"SUPREME BOUQUET","b":"YVES SAINT LAURENT - PRIVEE","s":"en","p":[775,325,225]},{"n":"TUXEDO","b":"YVES SAINT LAURENT - PRIVEE","s":"en","p":[695,400]}];
+const WA='https://wa.me/message/MNMRZT4JGUHYK1';
+const T={
+ar:{dir:'rtl',
+ badge:'صُنع في غراس — فرنسا · عاصمة العطور في العالم',
+ h1a:'زيوت عطرية فرنسية فاخرة',
+ h1b:'من قلب غراس إلى باب متجرك',
+ sub:'أكثر من 570 زيت عطري بأعلى جودة، مستوردة مباشرة من فرنسا، بشهادات IFRA العالمية، وبأسعار جملة لا تُنافس. ابدأ علامتك العطرية الخاصة اليوم.',
+ order:'اطلب الآن عبر واتساب', browse:'تصفّح القائمة والأسعار',
+ f1h:'أصلية من غراس، فرنسا', f1p:'جميع الزيوت من غراس الفرنسية — المدينة التي تصنع عطور أشهر الماركات العالمية.',
+ f2h:'شهادات IFRA', f2p:'كل الزيوت مطابقة لمعايير IFRA الدولية، وجميع الشهادات المصدّقة متوفرة.',
+ f3h:'ضمان على جميع المنتجات', f3p:'نضمن الجودة والثبات في كل طلب، وثقتك هي أولويتنا.',
+ f4h:'شحن لجميع الدول', f4p:'الحد الأدنى للطلب 5 كيلو فقط، ونوصلك أينما كنت.',
+ alcTag:'متوفر أيضًا', alcP:'كحول عطور فرنسي أصلي بتركيز 96%، نقي وخالٍ من الروائح، مثالي لتصنيع العطور الفاخرة.', perGallon:'للجالون',
+ catH:'قائمة الزيوت والأسعار', catNote:'الأسعار بالدرهم الإماراتي لكل كيلو · الحد الأدنى للطلب 5 كيلو · الأسعار تقريبية وقد تقل عند طلب كميات كبيرة',
+ search:'ابحث باسم العطر أو الماركة… مثال: Aventus أو Dior',
+ all:'الكل', ar:'العطور العربية', en:'العطور الأوروبية والعالمية', sig:'تركيبات حصرية',
+ arD:'عود، مسك، بخور وروائح شرقية فاخرة', enD:'أشهر الماركات الفرنسية والإيطالية والعالمية', sigD:'تركيبات خاصة فاخرة من غراس',
+ tA:'توب كوالتي A', kg:'للكيلو', tB:'درجة B', tC:'درجة C',
+ lgA:'توب كوالتي A — أعلى جودة', lgB:'درجة B — جودة ممتازة', lgC:'درجة C — اقتصادي',
+ emptyH:'ما لقيت العطر اللي تدوره؟', emptyP:'لا تشيل هم! أي عطر مو موجود في القائمة تقدر تكلمنا على الواتساب ونقدر نوفّره لك.', ask:'اسألنا على واتساب',
+ ctaH:'جاهز تبدأ تجارتك في العطور؟', ctaP:'تواصل معنا الحين على الواتساب لطلب عيّنات، أسعار الكميات الكبيرة، أو أي عطر غير موجود في القائمة — نوفّره لك.',
+ foot:'جميع الزيوت من غراس، فرنسا · شهادات IFRA مصدّقة · ضمان على جميع المنتجات · الأسماء التجارية مذكورة للتعريف بالرائحة فقط',
+ msg:'مرحبًا، أبغى أستفسر عن الزيوت العطرية'},
+fa:{dir:'rtl',
+ badge:'ساخت گراس — فرانسه · پایتخت عطر جهان',
+ h1a:'روغن‌های عطر لوکس فرانسوی',
+ h1b:'از قلب گراس تا درِ فروشگاه شما',
+ sub:'بیش از ۵۷۰ روغن عطر با بالاترین کیفیت، وارداتی مستقیم از فرانسه، با گواهی بین‌المللی IFRA و قیمت عمده‌ی بی‌رقیب. برند عطر خودتان را از همین امروز شروع کنید.',
+ order:'همین حالا در واتساپ سفارش دهید', browse:'مشاهده فهرست و قیمت‌ها',
+ f1h:'اصل از گراس، فرانسه', f1p:'تمام روغن‌ها از گراس فرانسه هستند — شهری که عطر معروف‌ترین برندهای جهان را می‌سازد.',
+ f2h:'گواهی IFRA', f2p:'همه‌ی روغن‌ها مطابق استانداردهای بین‌المللی IFRA هستند و تمام گواهی‌های تأییدشده موجود است.',
+ f3h:'ضمانت برای همه محصولات', f3p:'کیفیت و ماندگاری را در هر سفارش تضمین می‌کنیم؛ اعتماد شما اولویت ماست.',
+ f4h:'ارسال به همه کشورها', f4p:'حداقل سفارش فقط ۵ کیلوگرم، و هر کجا باشید برایتان ارسال می‌کنیم.',
+ alcTag:'همچنین موجود است', alcP:'الکل عطر اصل فرانسوی با غلظت ۹۶٪، خالص و بدون بو، ایده‌آل برای تولید عطرهای لوکس.', perGallon:'برای هر گالن',
+ catH:'فهرست روغن‌ها و قیمت‌ها', catNote:'قیمت‌ها به درهم امارات برای هر کیلوگرم · حداقل سفارش ۵ کیلوگرم · قیمت‌ها تقریبی هستند و برای سفارش‌های عمده ممکن است کمتر شوند',
+ search:'جستجو با نام عطر یا برند… مثال: Aventus یا Dior',
+ all:'همه', ar:'عطرهای عربی', en:'عطرهای اروپایی و بین‌المللی', sig:'ترکیب‌های انحصاری',
+ arD:'عود، مُشک، بخور و رایحه‌های شرقی لوکس', enD:'معروف‌ترین برندهای فرانسوی، ایتالیایی و جهانی', sigD:'ترکیب‌های ویژه و لوکس از گراس',
+ tA:'کیفیت برتر A', kg:'هر کیلو', tB:'درجه B', tC:'درجه C',
+ lgA:'کیفیت برتر A — بالاترین کیفیت', lgB:'درجه B — کیفیت عالی', lgC:'درجه C — اقتصادی',
+ emptyH:'عطر مورد نظرتان را پیدا نکردید؟', emptyP:'نگران نباشید! هر عطری که در فهرست نیست، در واتساپ با ما تماس بگیرید و برایتان تهیه می‌کنیم.', ask:'در واتساپ بپرسید',
+ ctaH:'آماده‌اید تجارت عطر خود را شروع کنید؟', ctaP:'همین حالا در واتساپ با ما در تماس باشید برای درخواست نمونه، قیمت سفارش‌های عمده یا هر عطری که در فهرست نیست — برایتان تهیه می‌کنیم.',
+ foot:'تمام روغن‌ها از گراس، فرانسه · گواهی‌های تأییدشده IFRA · ضمانت برای همه محصولات · نام برندها فقط برای معرفی رایحه ذکر شده‌اند',
+ msg:'سلام، درباره روغن‌های عطر سؤال دارم'},
+en:{dir:'ltr',
+ badge:'Made in Grasse, France · The World Capital of Perfume',
+ h1a:'Luxury French Perfume Oils',
+ h1b:'From the heart of Grasse to your door',
+ sub:'570+ premium perfume oils imported directly from France, IFRA-certified, at unbeatable wholesale prices. Launch your own fragrance brand today.',
+ order:'Order now on WhatsApp', browse:'Browse the catalogue & prices',
+ f1h:'Genuine from Grasse, France', f1p:'All our oils come from Grasse, the city that creates fragrances for the world\'s most famous brands.',
+ f2h:'IFRA certified', f2p:'Every oil complies with international IFRA standards, and all attested certificates are available.',
+ f3h:'Guarantee on all products', f3p:'Quality and longevity guaranteed on every order. Your trust is our priority.',
+ f4h:'Worldwide shipping', f4p:'Minimum order just 5 kg, delivered wherever you are.',
+ alcTag:'Also available', alcP:'Original French perfumer\'s alcohol, 96% purity, clean and odourless — ideal for premium perfume production.', perGallon:'per gallon',
+ catH:'Oils & Price List', catNote:'Prices in AED per kilo · Minimum order 5 kg · Prices are approximate and may be lower for large-quantity orders',
+ search:'Search by perfume or brand… e.g. Aventus or Dior',
+ all:'All', ar:'Arabic Perfumes', en:'European & International Perfumes', sig:'Exclusive Blends',
+ arD:'Oud, musk, bakhoor and luxurious oriental scents', enD:'The most famous French, Italian and global houses', sigD:'Exclusive luxury blends from Grasse',
+ tA:'Top Quality A', kg:'per kg', tB:'Grade B', tC:'Grade C',
+ lgA:'Top Quality A — finest grade', lgB:'Grade B — excellent quality', lgC:'Grade C — economy',
+ emptyH:'Can\'t find the perfume you want?', emptyP:'No problem! For any perfume not on the list, contact us on WhatsApp and we can source it for you.', ask:'Ask us on WhatsApp',
+ ctaH:'Ready to start your perfume business?', ctaP:'Message us on WhatsApp now for samples, bulk pricing, or any perfume not on the list — we\'ll source it for you.',
+ foot:'All oils from Grasse, France · Attested IFRA certificates · Guarantee on all products · Brand names are mentioned for scent reference only',
+ msg:'Hello, I would like to ask about your perfume oils'}
+};
+let L='ar', TAB='all';
+const $=s=>document.querySelector(s);
+const fmt=n=>n.toLocaleString('en-US');
+function setLang(l){
+  L=l; const t=T[l];
+  document.documentElement.lang=l; document.documentElement.dir=t.dir;
+  document.body.className=l==='ar'?'':l;
+  document.querySelectorAll('[data-t]').forEach(e=>e.textContent=t[e.dataset.t]);
+  document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+  $('#q').placeholder=t.search;
+  document.querySelectorAll('[data-wa]').forEach(a=>{a.href=WA;a.target='_blank';a.rel='noopener'});
+  render();
+}
+function card(x){
+  const t=T[L], lab=[t.tA,t.tB,t.tC];
+  return `<div class="item">${x.b?`<div class="br">${x.b}</div>`:''}<div class="nm">${x.n}</div><div class="tiers">${x.p.map((p,i)=>`<div class="tier t${i}"><small>${lab[i]}</small><b>${fmt(p)}<em>AED</em></b><small class="kg">${t.kg}</small></div>`).join('')}</div></div>`;
+}
+function render(){
+  const t=T[L], q=$('#q').value.trim().toLowerCase();
+  const hit=x=>!q||x.n.toLowerCase().includes(q)||x.b.toLowerCase().includes(q);
+  const secs=['ar','en','sig'];
+  const counts={all:0}; secs.forEach(s=>counts[s]=DATA.filter(x=>x.s===s&&hit(x)).length); counts.all=counts.ar+counts.en+counts.sig;
+  $('#tabs').innerHTML=['all',...secs].map(s=>`<button data-s="${s}" class="${TAB===s?'on':''}">${t[s]}<span class="n">${counts[s]}</span></button>`).join('');
+  let html='', total=0;
+  secs.forEach(s=>{
+    if(TAB!=='all'&&TAB!==s) return;
+    const items=DATA.filter(x=>x.s===s&&hit(x)); if(!items.length) return;
+    total+=items.length;
+    html+=`<div class="sec-h"><div><h3>${t[s]}</h3><p>${t[s+'D']}</p></div></div><div class="grid">${items.slice(0,q?999:600).map(card).join('')}</div>`;
+  });
+  $('#list').innerHTML=html;
+  $('#empty').style.display=total?'none':'block';
+}
+document.querySelectorAll('.langs button').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+$('#tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(b){TAB=b.dataset.s;render();}});
+$('#q').addEventListener('input',render);
+// floating drops
+const hero=$('#hero');for(let i=0;i<14;i++){const d=document.createElement('span');d.className='drop';d.style.left=Math.random()*100+'%';d.style.bottom='-10px';d.style.animationDelay=(-Math.random()*7)+'s';d.style.animationDuration=(5+Math.random()*5)+'s';hero.appendChild(d);}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+setLang('ar');
+</script>
+</body>
+</html>
